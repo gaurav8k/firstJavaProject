@@ -22,7 +22,7 @@ public class classServlet extends HttpServlet {
 			session.setAttribute("FirstName", name);
 			context.setAttribute("FirstName", name);
 		}		
-		writer.println("Am from classServlet(GET Method) " + name + " The session is :" + (String)session.getAttribute("FirstName"));
+		writer.println("<h2>Am from classServlet(GET Method) </h2>" + name + " The session is :" + (String)session.getAttribute("FirstName"));
 		writer.println("The context is: " + (String)context.getAttribute("FirstName"));
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
